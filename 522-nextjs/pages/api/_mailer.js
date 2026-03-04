@@ -35,7 +35,7 @@ export async function sendSubmissionsBatch() {
         const fio = [sub.lastName, sub.firstName, sub.middleName].filter(Boolean).join(' ')
 
         await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: '522rescue-team.xyz',
             to: settings.email,
             subject: `Розыскная карта: ${fio}`,
             html: `
